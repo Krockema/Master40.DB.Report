@@ -1,6 +1,7 @@
 ﻿using Master40.DB.Report.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Master40.DB.Models;
 
 namespace Master40.DB.Report
 {
@@ -19,5 +20,6 @@ namespace Master40.DB.Report
         public DbSet<SimulationOrder> SimulationOrders { get; set; }
         public DbSet<SimulationConfiguration> SimulationConfigurations { get; set; }
         public DbSet<StockExchange> StockExchanges { get; set; }
+        public DbSet<SimulationOperation> SimulationOperations { get; set; }
     }
 }
